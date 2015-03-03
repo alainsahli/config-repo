@@ -3,7 +3,6 @@ logging:
   level:
     org.springframework.boot: DEBUG
     com.mongodb: DEBUG
-	
 ---
 spring:
   profiles: cloud
