@@ -8,4 +8,8 @@ spring:
   profiles: cloud
   data:
     mongodb:
-      uri: ${vcap.services.${PREFIX:}mongodb.credentials.uri}
+      host: ${vcap.services.${PREFIX:}mongodb.credentials.host}.xip.io
+      port: ${vcap.services.${PREFIX:}mongodb.credentials.port}
+      username: ${vcap.services.${PREFIX:}mongodb.credentials.username}
+      password: ${vcap.services.${PREFIX:}mongodb.credentials.password}
+      database: ${vcap.services.${PREFIX:}mongodb.credentials.db}
