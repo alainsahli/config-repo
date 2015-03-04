@@ -9,7 +9,7 @@ spring:
   data:
     mongodb:
       host: ${vcap.services.${PREFIX:}mongodb.credentials.host}.xip.io
-      port: ${vcap.services.${PREFIX:}mongodb.credentials.port}
+      port: 10005
       username: ${vcap.services.${PREFIX:}mongodb.credentials.username}
       password: ${vcap.services.${PREFIX:}mongodb.credentials.password}
       database: ${vcap.services.${PREFIX:}mongodb.credentials.db}
